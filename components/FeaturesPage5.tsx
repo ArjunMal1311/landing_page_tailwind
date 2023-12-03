@@ -15,40 +15,14 @@ interface FeatureSection {
     icon: React.ReactNode;
 }
 
-const getIconByTitle = (title: string) => {
-    switch (title) {
-        case 'Discussions':
-            return <CiChat1 />;
-        case 'Permissions':
-            return <BsShieldLock />;
-        case 'Authentication':
-            return <FiBarChart2 />;
-        case 'Profile Settings':
-            return <CiChat1 />;
-        case 'Account Security':
-            return <BsShieldLock />;
-        case 'Activity Tracking':
-            return <FiBarChart2 />;
-        case 'Data Visualization':
-            return <CiChat1 />;
-        case 'Analytics Dashboard':
-            return <BsShieldLock />;
-        case 'Reporting Tools':
-            return <FiBarChart2 />;
-        default:
-            return null;
-    }
-};
-
 const FeatureSection = ({ title, items, icon }: FeatureSection) => (
     <div>
-
         <span className='inline-block bg-clip-text text-transparent bg-gradient-to-r  from-[#a855f7] to-[#eccade] text-[18px] font-semibold'>
             {title}
         </span>
-        <div className='pt-4 flex'>
+        <div className='pt-4 flex sm:flex-row flex-col'>
             {items.map((item, index) => (
-                <div key={index} className='w-1/3'>
+                <div key={index} className='sm:w-1/3 my-4 w-full'>
                     <div className='flex space-x-2 items-center'>
                         <div>{icon}</div>
                         <div>{item.title}</div>
@@ -93,8 +67,8 @@ const FeaturesPage5 = () => {
 
     return (
         <div className='flex justify-center items-center text-white flex-col py-28'>
-            <div className='w-[1380px]'>
-                <div className='text-[44px] font-extrabold'>Why trust us?</div>
+            <div className='2xl:w-[1380px] w-full px-8'>
+                <div className='text-[44px] font-extrabold mb-3'>Why trust us?</div>
                 <div className='text-[18px] text-[#94a3b8]'>
                     <div className='w-2/3'>
                         Many desktop publishing packages and web page editors now use lorem ipsum as their default model text, and a search will uncover many web sites still in their infancy.

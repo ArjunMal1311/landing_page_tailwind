@@ -23,13 +23,13 @@ const Footer = () => {
 
     return (
         <div className='py-16 text-white flex justify-center items-center'>
-            <div className='w-[1380px] h-[200px] flex justify-between'>
+            <div className='2xl:w-[1380px] sm:h-[200px] flex sm:justify-between w-full sm:flex-row flex-col h-full px-8'>
                 <div className='flex justify-between flex-col h-full'>
                     <div>
-                        <div className='text-2xl font-bold'>TIH</div>
-                        <div className='text-[#CBD5E1] text-[14px]'>All rights reserved</div>
+                        <div className='text-2xl font-bold sm:mb-0 mb-4'>TIH</div>
+                        <div className='text-[#CBD5E1] text-[14px] sm:mb-0 mb-4'>All rights reserved</div>
                     </div>
-                    <div className='flex space-x-4 '>
+                    <div className='flex space-x-4 sm:mb-0 mb-4'>
                         <div className='hover:text-white text-[#cfcece] cursor-pointer transition duration-300'>
                             <FaInstagram size={30} />
                         </div>

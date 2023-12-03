@@ -16,8 +16,8 @@ const FeaturesPage = () => {
 
     return (
         <div className="py-8 flex justify-center items-center text-white">
-            <div className="w-[1380px] h-[600px] flex items-center justify-between px-8">
-                <div className="flex flex-col w-1/2">
+            <div className="2xl:w-[1380px] md:h-[600px] h-fit w-full flex items-center justify-between px-8 md:flex-row flex-col">
+                <div className="flex flex-col md:w-1/2 w-full">
                     <div className="text-[14px] font-semibold">The security first platform</div>
                     <div className="text-[36px] font-bold">
                         Simplify your security with authentication services
@@ -31,7 +31,7 @@ const FeaturesPage = () => {
                         {features.map((feature, index) => (
                             <div
                                 key={index}
-                                className={`text-[15px] text-[#8c8c8c] px-4 border border-[#8c8c8c] my-3 w-[320px] py-1.5 rounded-lg flex space-x-2 items-center font-medium transition duration-300 cursor-pointer select-none ${activeIcon === index ? 'text-white border-purple-400' : ''}`}
+                                className={`text-[15px] text-[#8c8c8c] px-4 border border-[#8c8c8c] my-3 sm:w-[320px] w-full py-1.5 rounded-lg flex space-x-2 items-center font-medium transition duration-300 cursor-pointer select-none ${activeIcon === index ? 'text-white border-purple-400' : ''}`}
                                 onClick={() => setActiveIcon(index)}
                             >
                                 <div>{feature.icon}</div>
@@ -41,8 +41,8 @@ const FeaturesPage = () => {
                     </div>
                 </div>
 
-                <div className="w-1/2 flex items-center justify-center h-full">
-                    <div className='border h-2/3 w-1/2 rounded-2xl'>
+                <div className="md:w-1/2 w-full flex items-center justify-center h-[600px]">
+                    <div className='border h-2/3 md:w-1/2 w-full rounded-2xl'>
                         <div className='h-[10%] border-b-2 flex items-center justify-end pr-4'>
                             <div className='flex space-x-2'>
                                 <div className='w-[12px] h-[12px] bg-red-400 rounded-full hover:bg-red-600 cursor-pointer'></div>

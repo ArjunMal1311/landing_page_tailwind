@@ -8,7 +8,7 @@ const dancingScript = Dancing_Script({ weight: "400", subsets: [] })
 const IntroductionPage = () => {
     return (
         <div className='flex justify-center items-center'>
-            <div className='w-[1380px] h-[610px] rounded-br-[100px]'>
+            <div className='2xl:w-[1380px] w-full text-center h-[610px] rounded-br-[100px]'>
                 <div className='text-white flex justify-between px-3 pt-3 h-[10%] select-none'>
                     <div >
                         <div className={`text-3xl font-bold ${dancingScript}`}>TIH</div>
@@ -25,7 +25,7 @@ const IntroductionPage = () => {
 
                 <div className='h-full flex justify-center items-center text-[#CBD5E1]'>
                     <div className='w-2/3 flex flex-col items-center'>
-                        <div className='text-[56px] font-bold'>Tech Innovators Hub!</div>
+                        <div className='text-[56px] font-bold leading-tight mb-4'>Tech Innovators Hub!</div>
                         <div className='text-[18px] text-center'>Discover the latest in technology and innovation with Tech Innovators Hub. We are your go-to source for cutting-edge information, products, and services that redefine the digital landscape.</div>
 
                         <div className='flex mt-6 space-x-5'>

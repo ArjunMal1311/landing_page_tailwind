@@ -45,10 +45,9 @@ const FeaturesPage4 = () => {
         }
     ];
 
-
     return (
         <div className='py-8 flex justify-center items-center text-white flex-col'>
-            <div className='w-[1380px] h-[150px]'>
+            <div className='2xl:w-[1380px] sm:h-[150px] w-full px-4 h-fit'>
                 <div className='text-[14px] font-semibold text-center'>The security first platform</div>
                 <div className='text-[44px] font-bold text-center'>Spot issues faster</div>
                 <div className='text-[18px] text-[#94a3b8] text-center flex justify-center items-center'>
