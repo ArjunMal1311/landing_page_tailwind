@@ -8,7 +8,7 @@ const dancingScript = Dancing_Script({ weight: "400", subsets: [] })
 const IntroductionPage = () => {
     return (
         <div className='flex justify-center items-center'>
-            <div className='border-2 w-[1380px] h-[610px] rounded-br-[100px]'>
+            <div className='w-[1380px] h-[610px] rounded-br-[100px]'>
                 <div className='text-white flex justify-between px-3 pt-3 h-[10%] select-none'>
                     <div >
                         <div className={`text-3xl font-bold ${dancingScript}`}>TIH</div>
