@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .logos-slide {
-  animation: 60s slide infinite linear;
+  animation: 40s slide infinite linear;
 }
 
 @keyframes slide {
@@ -67,9 +67,4 @@
   background-color: #929292;
   margin-top: -4px;
   clip-path: polygon(15.9% 45.25%, 82.64% 45.25%, 65.25% 52.3%, 34.03% 52.3%);
-}
-
-.radial-gradient {
-  background: radial-gradient(circle, transparent 50%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 80%);
-  border-radius: 50%;
 }

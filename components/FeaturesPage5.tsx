@@ -1,27 +1,14 @@
 import React from 'react';
-import { CiChat1 } from 'react-icons/ci';
 import Breaker from './Breaker';
-import { BsShieldLock } from 'react-icons/bs';
-import { FiBarChart2 } from "react-icons/fi"
+import { sections } from './data/data';
 
-interface FeatureItem {
-    title: string;
-    description: string;
-}
-
-interface FeatureSection {
-    title: string;
-    items: FeatureItem[];
-    icon: React.ReactNode;
-}
-
-const FeatureSection = ({ title, items, icon }: FeatureSection) => (
+const FeatureSection = ({ title, items, icon }: any) => (
     <div>
         <span className='inline-block bg-clip-text text-transparent bg-gradient-to-r  from-[#a855f7] to-[#eccade] text-[18px] font-semibold'>
             {title}
         </span>
         <div className='pt-4 flex sm:flex-row flex-col'>
-            {items.map((item, index) => (
+            {items.map((item : any, index : any) => (
                 <div key={index} className='sm:w-1/3 my-4 w-full'>
                     <div className='flex space-x-2 items-center'>
                         <div>{icon}</div>
@@ -35,36 +22,6 @@ const FeatureSection = ({ title, items, icon }: FeatureSection) => (
 );
 
 const FeaturesPage5 = () => {
-    const sections: FeatureSection[] = [
-        {
-            title: 'API Authorization',
-            items: [
-                { title: 'Discussions', description: 'Login box must find the right balance for user convenience, privacy, and security.' },
-                { title: 'Permissions', description: 'Manage and customize user permissions with our flexible API authorization system.' },
-                { title: 'Authentication', description: 'Secure your application with robust authentication mechanisms and protocols.' },
-            ],
-            icon: <CiChat1 />,
-        },
-        {
-            title: 'User Management',
-            items: [
-                { title: 'Profile Settings', description: 'Allow users to customize their profiles and settings effortlessly.' },
-                { title: 'Account Security', description: 'Implement advanced security features to protect user accounts from unauthorized access.' },
-                { title: 'Activity Tracking', description: 'Track user activities for improved analytics and insights.' },
-            ],
-            icon: <BsShieldLock />,
-        },
-        {
-            title: 'Data Analytics',
-            items: [
-                { title: 'Data Visualization', description: 'Create insightful visualizations to understand your data better.' },
-                { title: 'Analytics Dashboard', description: 'Access a comprehensive analytics dashboard for real-time data monitoring.' },
-                { title: 'Reporting Tools', description: 'Generate detailed reports to gain actionable insights from your data.' },
-            ],
-            icon: <FiBarChart2 />,
-        },
-    ];
-
     return (
         <div className='flex justify-center items-center text-white flex-col py-16'>
             <div className='2xl:w-[1380px] w-full px-8'>
@@ -78,7 +35,7 @@ const FeaturesPage5 = () => {
                 <div className='pt-8'>
                     {sections.map((section, index) => (
                         <React.Fragment key={index}>
-                            <FeatureSection title={section.title} items={section.items} icon={section.icon} />
+                            <FeatureSection title={section.title} items={section.items} icon={<section.icon />} />
                             {index < sections.length - 1 && <Breaker />}
                         </React.Fragment>
                     ))}

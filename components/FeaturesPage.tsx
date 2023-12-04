@@ -1,30 +1,9 @@
 "use client"
 import React, { useState } from 'react';
-import { PiAlignTopSimple } from 'react-icons/pi';
-import { BsMenuButtonWideFill } from 'react-icons/bs';
-import { FaDAndD } from 'react-icons/fa';
-import { MdEnhancedEncryption, MdLock, MdLockOpen, MdOutlineSecurityUpdateGood, MdSecurity, MdSecurityUpdate, MdShield, MdSystemSecurityUpdateWarning, MdVerifiedUser } from "react-icons/md";
+import { descriptions, features, iconSets } from './data/data';
 
 const FeaturesPage = () => {
     const [activeIcon, setActiveIcon] = useState<number>(0);
-
-    const features = [
-        { icon: <PiAlignTopSimple size={20} />, text: 'Simplify your security' },
-        { icon: <BsMenuButtonWideFill size={20} />, text: 'Customer Identity' },
-        { icon: <FaDAndD size={20} />, text: 'Adaptable authentication' },
-    ];
-
-    const iconSets = [
-        [<MdSystemSecurityUpdateWarning size={60} />, <MdSecurityUpdate size={60} />, <MdOutlineSecurityUpdateGood size={60} />],
-        [<MdEnhancedEncryption size={60} />, <MdVerifiedUser size={60} />, <MdSecurity size={60} />],
-        [<MdLock size={60} />, <MdLockOpen size={60} />, <MdShield size={60} />],
-    ];
-
-    const descriptions = [
-        ['Error', 'Integrate', 'Success'],
-        ['Enhance', 'Empower', 'Engage'],
-        ['Lock', 'Unlock', 'Shield'],
-    ];
 
     return (
         <div className="py-8 flex justify-center items-center text-white">
@@ -45,7 +24,7 @@ const FeaturesPage = () => {
                                 className={`text-[15px] text-[#8c8c8c] px-4 border border-[#8c8c8c] my-3 sm:w-[320px] w-full py-1.5 rounded-lg flex space-x-2 items-center font-medium transition duration-300 cursor-pointer select-none ${activeIcon === index ? 'text-white border-purple-400' : ''}`}
                                 onClick={() => setActiveIcon(index)}
                             >
-                                <div>{feature.icon}</div>
+                                <div>{<feature.icon />}</div>
                                 <div>{feature.text}</div>
                             </div>
                         ))}
@@ -62,9 +41,9 @@ const FeaturesPage = () => {
                         </div>
                         {activeIcon === 0 &&
                             <div className='flex justify-around items-center h-[90%]'>
-                                {iconSets[0].map((icon, index) => (
+                                {iconSets[0].map((Icon, index) => (
                                     <div key={index} className='flex flex-col justify-center items-center space-y-2 hover:scale-110 cursor-pointer transition duration-300'>
-                                        {icon}
+                                        {<Icon size={60} />}
                                         <div className='text-[14px]'>{descriptions[0][index]}</div>
                                     </div>
                                 ))}
@@ -72,9 +51,9 @@ const FeaturesPage = () => {
                         }
                         {activeIcon === 1 &&
                             <div className='flex justify-around items-center h-[90%]'>
-                                {iconSets[1].map((icon, index) => (
+                                {iconSets[1].map((Icon, index) => (
                                     <div key={index} className='flex flex-col justify-center items-center space-y-2 hover:scale-110 cursor-pointer transition duration-300'>
-                                        {icon}
+                                        {<Icon size={60} />}
                                         <div className='text-[14px]'>{descriptions[1][index]}</div>
                                     </div>
                                 ))}
@@ -82,9 +61,9 @@ const FeaturesPage = () => {
                         }
                         {activeIcon === 2 &&
                             <div className='flex justify-around items-center h-[90%]'>
-                                {iconSets[2].map((icon, index) => (
+                                {iconSets[2].map((Icon, index) => (
                                     <div key={index} className='flex flex-col justify-center items-center space-y-2 hover:scale-110 cursor-pointer transition duration-300'>
-                                        {icon}
+                                        {<Icon size={60} />}
                                         <div className='text-[14px]'>{descriptions[2][index]}</div>
                                     </div>
                                 ))}

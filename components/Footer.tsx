@@ -1,26 +1,8 @@
 import React from 'react';
 import { FaInstagram, FaTwitch, FaTwitter } from 'react-icons/fa';
+import { columns } from './data/data';
 
 const Footer = () => {
-    const columns = [
-        {
-            title: 'About Us',
-            items: ['Our Story', 'Mission & Vision', 'Team', 'Values', 'Contact Us'],
-        },
-        {
-            title: 'Services',
-            items: ['Web Development', 'Mobile App Development', 'UI/UX Design', 'Digital Marketing', 'Consulting'],
-        },
-        {
-            title: 'Resources',
-            items: ['Blog', 'Whitepapers', 'Case Studies', 'FAQs', 'Support'],
-        },
-        {
-            title: 'Connect',
-            items: ['Newsletter', 'Community', 'Events', 'Careers', 'Partnerships'],
-        },
-    ];
-
     return (
         <div className='py-16 text-white flex justify-center items-center'>
             <div className='2xl:w-[1380px] sm:h-[200px] flex sm:justify-between w-full sm:flex-row flex-col h-full px-8'>

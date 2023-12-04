@@ -6,7 +6,6 @@ import { JetBrains_Mono } from 'next/font/google';
 const dancingScript = Dancing_Script({ weight: "400", subsets: [] })
 const JetBrains = JetBrains_Mono({ subsets: ['latin'] });
 
-
 const IntroductionPage = () => {
     return (
         <div className='flex justify-center items-center relative z-50'>
