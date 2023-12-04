@@ -59,7 +59,7 @@ const FeaturesPage4 = () => {
 
             <div className="logos flex overflow-hidden whitespace-nowrap relative w-full">
                 <div className="logos-slide flex">
-                    <div className='flex overflow-hidden logosdiv'>
+                    <div className='flex overflow-hidden'>
                         {featureCardsData.map((data, index) => (
                             <div key={index} className="border border-[#4b4b4b] h-[220px] w-[360px] mt-16 rounded-lg p-5 justify-between mx-12">
                                 <div className='flex justify-between flex-col'>
@@ -78,8 +78,9 @@ const FeaturesPage4 = () => {
                             </div>
                         ))}
                     </div>
-
-                    <div className='flex overflow-hidden logosdiv'>
+                </div>
+                <div className="logos-slide flex">
+                    <div className='flex overflow-hidden'>
                         {featureCardsData.map((data, index) => (
                             <div key={index} className="border border-[#4b4b4b] h-[220px] w-[360px] mt-16 rounded-lg p-5 justify-between mx-12">
                                 <div className='flex justify-between flex-col'>

@@ -31,27 +31,19 @@ const IntroductionPage = () => {
                 </div>
 
                 <div className='h-full flex justify-center items-center text-[#CBD5E1]'>
-                    <div className='w-2/3 flex flex-col items-center'>
+                    <div className='sm:w-2/3 w-full flex flex-col items-center px-4'>
                         <div className={`text-[56px] font-bold leading-tight mb-4 ${JetBrains.className}`}>Tech Innovators Hub!</div>
                         <div className={`text-[18px] text-center`}>Discover the latest in technology and innovation with Tech Innovators Hub. We are your go-to source for cutting-edge information, products, and services that redefine the digital landscape.</div>
 
                         <div className='flex mt-6 space-x-5'>
                             <div className='group text-[#0f172a] bg-[#cfcece] px-3 py-1.5 rounded-xl text-[14px] font-semibold flex items-center space-x-1 hover:bg-white cursor-pointer transition duration-300 select-none'>
-                                <div>
-                                    Get Started
-                                </div>
-
+                                <div>Get Started</div>
                                 <div className='transform group-hover:translate-x-1 transition duration-300'><FaArrowRight /></div>
                             </div>
 
                             <div className='text-white bg-[#0f172a40] border px-3 py-1.5 rounded-xl text-[14px] font-semibold flex items-center space-x-2 hover:bg-[#22366540] cursor-pointer select-none'>
-                                <div>
-                                    <FaMagic />
-                                </div>
-
-                                <div>
-                                    Read the docs
-                                </div>
+                                <div><FaMagic /></div>
+                                <div>Read the docs</div>
                             </div>
                         </div>
                     </div>

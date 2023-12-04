@@ -1,9 +1,28 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import { FaArrowRight } from 'react-icons/fa'
 
 const FeaturesPage2 = () => {
+    const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+
+    const handleMouseMove = (e: any) => {
+        setCursorPosition({ x: e.clientX, y: e.clientY });
+    };
     return (
         <div className='py-8 flex justify-center items-center text-white flex-col'>
+            {/* <div style={{ position: 'relative' }}>
+                <div
+                    className="absolute w-20 h-20 bg-white rounded-lg z-999"
+                    style={{
+                        top: `${cursorPosition.x}px`,
+                        left: `-${cursorPosition.y}px`,
+                    }}
+                ></div>
+
+            </div> */}
+
+
+
             <div className='2xl:w-[1380px] sm:h-[150px] w-full h-fit'>
                 <div className='text-[44px] font-bold text-center'>Faster. Smarter.</div>
                 <div className='text-[18px] text-[#94a3b8] text-center flex justify-center items-center'>
@@ -13,7 +32,7 @@ const FeaturesPage2 = () => {
                 </div>
             </div>
 
-            <div className='border border-[#656c76] h-[400px] 2xl:w-[1380px] w-full mt-8 rounded-lg flex sm:flex-row flex-col py-4'>
+            <div className='border border-[#656c76] h-[400px] 2xl:w-[1380px] w-full mt-8 rounded-lg flex sm:flex-row flex-col py-4' onMouseMove={handleMouseMove}>
                 <div className='flex justify-center sm:w-2/5 h-full flex-col px-8 w-full'>
                     <div className='text-[20px] font-semibold'>Optimized for security</div>
                     <div className='text-[16px] text-[#94a3b8] py-1'>Optimize for user experience and privacy. Use social login integrations, lower user friction, incorporate rich user profiling, and facilitate more transactions.</div>
