@@ -50,18 +50,18 @@ const FeaturesPage2 = () => {
             </div>
 
             <div className='2xl:w-[1380px] w-full mt-6 flex md:space-x-6 md:flex-row flex-col my-8'>
-                <div className='border border-[#656c76] h-[400px] md:w-2/3 w-full rounded-lg my-8 flex flex-col'>
+                <div className='border border-[#656c76] sm:h-[400px] md:w-2/3 w-full rounded-lg my-8 flex flex-col h-fit'>
                     <div className='flex flex-col px-6 pt-8 w-4/5'>
                         <div className='text-[20px] font-semibold'>Extensibility</div>
                         <div className='text-[16px] text-[#94a3b8] py-1'>Your login box must find the right balance between user convenience, privacy and security.</div>
                     </div>
 
                     <div className='w-full h-full flex px-4 justify-between pt-6'>
-                        <Image src={"/item1.png"} width={100} height={100} alt='none' />
-                        <Image src={"/item2.png"} width={100} height={100} alt='none' />
-                        <Image src={"/item3.png"} width={100} height={100} alt='none' />
-                        <Image src={"/item4.png"} width={100} height={100} alt='none' />
-                        <Image src={"/item5.png"} width={100} height={100} alt='none' />
+                        <Image src={"/item1.png"} width={100} height={100} alt='none' className='sm:flex '/>
+                        <Image src={"/item2.png"} width={100} height={100} alt='none' className='sm:flex hidden'/>
+                        <Image src={"/item3.png"} width={100} height={100} alt='none' className='sm:flex hidden'/>
+                        <Image src={"/item4.png"} width={100} height={100} alt='none' className='sm:flex '/>
+                        <Image src={"/item5.png"} width={100} height={100} alt='none' className='sm:flex '/>
                     </div>
                 </div>
                 <div className='border border-[#656c76] h-[400px] md:w-1/3 w-full rounded-lg my-8 overflow-hidden'>
