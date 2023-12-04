@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image';
 import React, { useState } from 'react'
 import { FaArrowRight } from 'react-icons/fa'
 
@@ -55,8 +56,12 @@ const FeaturesPage2 = () => {
                         <div className='text-[16px] text-[#94a3b8] py-1'>Your login box must find the right balance between user convenience, privacy and security.</div>
                     </div>
 
-                    <div className='w-full h-full'>
-                        <div className='bg-[url("/feature-image-02.png")] w-full h-full bg-cover'></div>
+                    <div className='w-full h-full flex px-4 justify-between pt-6'>
+                        <Image src={"/item1.png"} width={100} height={100} alt='none' />
+                        <Image src={"/item2.png"} width={100} height={100} alt='none' />
+                        <Image src={"/item3.png"} width={100} height={100} alt='none' />
+                        <Image src={"/item4.png"} width={100} height={100} alt='none' />
+                        <Image src={"/item5.png"} width={100} height={100} alt='none' />
                     </div>
                 </div>
                 <div className='border border-[#656c76] h-[400px] md:w-1/3 w-full rounded-lg my-8 overflow-hidden'>
