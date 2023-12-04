@@ -13,7 +13,7 @@ const IntroductionPage = () => {
     return (
         <div className='flex justify-center items-center relative z-50'>
             <div className='bg-radial-gradient absolute w-full h-full  rounded-full -z-30 flex items-center justify-center'>
-                <div className='relative z-0 bending-line rotate-12 w-[400px] sm:w-[600px] md:w-[600px]'>
+                <div className='relative z-0 bending-line rotate-12 w-[80%] sm:w-[600px] md:w-[600px]'>
                     <FaArrowRight size={40} className="absolute text-white top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-arrow-move" />
                 </div>
             </div>
