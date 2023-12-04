@@ -25,7 +25,7 @@ const FeaturesPage2 = () => {
 
 
             <div className='2xl:w-[1380px] sm:h-[150px] w-full h-fit'>
-                <div className='text-[44px] font-bold text-center'>Faster. Smarter.</div>
+                <div className='text-[44px] font-bold text-center p-2'>Faster. Smarter.</div>
                 <div className='text-[18px] text-[#94a3b8] text-center flex justify-center items-center'>
                     <div className='w-2/3'>
                         There are many variations available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
@@ -33,12 +33,12 @@ const FeaturesPage2 = () => {
                 </div>
             </div>
 
-            <div className='border border-[#656c76] h-[400px] 2xl:w-[1380px] w-full mt-8 rounded-lg flex sm:flex-row flex-col py-4' onMouseMove={handleMouseMove}>
+            <div className='border border-[#656c76] h-[400px] 2xl:w-[1380px] w-full mt-8 rounded-lg flex sm:flex-row flex-col py-6' onMouseMove={handleMouseMove}>
                 <div className='flex justify-center sm:w-2/5 h-full flex-col px-8 w-full'>
                     <div className='text-[20px] font-semibold'>Optimized for security</div>
                     <div className='text-[16px] text-[#94a3b8] py-1'>Optimize for user experience and privacy. Use social login integrations, lower user friction, incorporate rich user profiling, and facilitate more transactions.</div>
-                    <div className='group text-white w-fit py-3 rounded-xl text-[14px] font-semibold flex items-center space-x-1 cursor-pointer transition duration-300 select-none'>
-                        <div>Get Started</div>
+                    <div className='group flex text-[15px] w-fit mt-3 space-x-1 items-center bg-transparent border-2 border-[#a7a7a7] px-3 py-0.5 rounded-2xl hover:text-white hover:border-purple-400 transition duration-500 cursor-pointer'>
+                        <div>Know more</div>
                         <div className='transform group-hover:translate-x-1 transition duration-300'><FaArrowRight /></div>
                     </div>
 
@@ -57,11 +57,11 @@ const FeaturesPage2 = () => {
                     </div>
 
                     <div className='w-full h-full flex px-4 justify-between pt-6'>
-                        <Image src={"/item1.png"} width={100} height={100} alt='none' className='sm:flex '/>
-                        <Image src={"/item2.png"} width={100} height={100} alt='none' className='sm:flex hidden'/>
-                        <Image src={"/item3.png"} width={100} height={100} alt='none' className='sm:flex hidden'/>
-                        <Image src={"/item4.png"} width={100} height={100} alt='none' className='sm:flex '/>
-                        <Image src={"/item5.png"} width={100} height={100} alt='none' className='sm:flex '/>
+                        <Image src={"/item1.png"} width={100} height={100} alt='none' className='sm:flex ' />
+                        <Image src={"/item2.png"} width={100} height={100} alt='none' className='sm:flex hidden' />
+                        <Image src={"/item3.png"} width={100} height={100} alt='none' className='sm:flex hidden' />
+                        <Image src={"/item4.png"} width={100} height={100} alt='none' className='sm:flex ' />
+                        <Image src={"/item5.png"} width={100} height={100} alt='none' className='sm:flex ' />
                     </div>
                 </div>
                 <div className='border border-[#656c76] h-[400px] md:w-1/3 w-full rounded-lg my-8 overflow-hidden'>

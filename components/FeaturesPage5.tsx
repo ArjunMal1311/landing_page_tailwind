@@ -70,7 +70,7 @@ const FeaturesPage5 = () => {
             <div className='2xl:w-[1380px] w-full px-8'>
                 <div className='text-[44px] font-extrabold mb-3'>Why trust us?</div>
                 <div className='text-[18px] text-[#94a3b8]'>
-                    <div className='w-2/3'>
+                    <div className='sm:w-2/3 w-full'>
                         Many desktop publishing packages and web page editors now use lorem ipsum as their default model text, and a search will uncover many web sites still in their infancy.
                     </div>
                 </div>
