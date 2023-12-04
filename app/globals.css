@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .logos-slide {
-    animation: 60s slide infinite linear;
+  animation: 60s slide infinite linear;
 }
 
 @keyframes slide {
@@ -15,7 +15,7 @@
   }
 }
 
-.logos:hover .logos-slide{
+.logos:hover .logos-slide {
   animation-play-state: paused;
 }
 
@@ -37,4 +37,49 @@
 .logos:after {
   right: 0;
   background: linear-gradient(to right, rgba(255, 255, 255, 0), #0f172a);
+}
+
+/* styles.css */
+
+.bg-radial-gradient {
+  background: radial-gradient(
+    circle at center,
+    #8b5cf6,
+    #a24cf3 1%,
+    #0f172a 30%
+  );
+}
+
+@keyframes arrow-move {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.animate-arrow-move {
+  animation: arrow-move 4s linear infinite;
+}
+
+@keyframes arrow-on-line {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.animate-arrow-on-line {
+  animation: arrow-on-line 6s linear infinite;
+}
+
+.bending-line {
+  position: relative;
+  height: 1px;
+  background-color: #ffffff; 
+  margin-top: -2px;
+  clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
 }

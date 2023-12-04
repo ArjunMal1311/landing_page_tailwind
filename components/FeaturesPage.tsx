@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { PiAlignTopSimple } from 'react-icons/pi';
 import { BsMenuButtonWideFill } from 'react-icons/bs';
 import { FaDAndD } from 'react-icons/fa';
-import { MdOutlineSecurityUpdateGood, MdSecurityUpdate, MdSystemSecurityUpdateWarning } from "react-icons/md"
+import { MdEnhancedEncryption, MdLock, MdLockOpen, MdOutlineSecurityUpdateGood, MdSecurity, MdSecurityUpdate, MdShield, MdSystemSecurityUpdateWarning, MdVerifiedUser } from "react-icons/md";
 
 const FeaturesPage = () => {
     const [activeIcon, setActiveIcon] = useState<number>(0);
@@ -14,11 +14,23 @@ const FeaturesPage = () => {
         { icon: <FaDAndD size={20} />, text: 'Adaptable authentication' },
     ];
 
+    const iconSets = [
+        [<MdSystemSecurityUpdateWarning size={60} />, <MdSecurityUpdate size={60} />, <MdOutlineSecurityUpdateGood size={60} />],
+        [<MdEnhancedEncryption size={60} />, <MdVerifiedUser size={60} />, <MdSecurity size={60} />],
+        [<MdLock size={60} />, <MdLockOpen size={60} />, <MdShield size={60} />],
+    ];
+
+    const descriptions = [
+        ['Error', 'Integrate', 'Success'],
+        ['Enhance', 'Empower', 'Engage'],
+        ['Lock', 'Unlock', 'Shield'],
+    ];
+
     return (
         <div className="py-8 flex justify-center items-center text-white">
-            <div className="2xl:w-[1380px] md:h-[600px] h-fit w-full flex items-center justify-between px-8 md:flex-row flex-col">
+            <div className="2xl:w-[1080px] md:h-[600px] h-fit w-full flex items-center justify-between px-8 md:flex-row flex-col">
                 <div className="flex flex-col md:w-1/2 w-full">
-                    <div className="text-[14px] font-semibold">The security first platform</div>
+                    <div className="text-[14px] font-semibold className='inline-block bg-clip-text text-transparent bg-gradient-to-r from-[#a855f7] to-[#eccade]">The security first platform</div>
                     <div className="text-[36px] font-bold">
                         Simplify your security with authentication services
                     </div>
@@ -26,7 +38,6 @@ const FeaturesPage = () => {
                         Define access roles for the end-users, and extend your authorization capabilities to
                         implement dynamic access control.
                     </div>
-
                     <div className="mt-8">
                         {features.map((feature, index) => (
                             <div
@@ -40,7 +51,6 @@ const FeaturesPage = () => {
                         ))}
                     </div>
                 </div>
-
                 <div className="md:w-1/2 w-full flex items-center justify-center h-[600px]">
                     <div className='border h-2/3 md:w-1/2 w-full rounded-2xl'>
                         <div className='h-[10%] border-b-2 flex items-center justify-end pr-4'>
@@ -50,12 +60,36 @@ const FeaturesPage = () => {
                                 <div className='w-[12px] h-[12px] bg-green-500 rounded-full hover:bg-green-600 cursor-pointer'></div>
                             </div>
                         </div>
-
-                        <div className='flex justify-center items-center h-[90%]'>
-                            <MdSystemSecurityUpdateWarning size={80} />
-                            <MdSecurityUpdate size={80} />
-                            <MdOutlineSecurityUpdateGood size={80} />
-                        </div>
+                        {activeIcon === 0 &&
+                            <div className='flex justify-around items-center h-[90%]'>
+                                {iconSets[0].map((icon, index) => (
+                                    <div key={index} className='flex flex-col justify-center items-center space-y-2 hover:scale-110 cursor-pointer transition duration-300'>
+                                        {icon}
+                                        <div className='text-[14px]'>{descriptions[0][index]}</div>
+                                    </div>
+                                ))}
+                            </div>
+                        }
+                        {activeIcon === 1 &&
+                            <div className='flex justify-around items-center h-[90%]'>
+                                {iconSets[1].map((icon, index) => (
+                                    <div key={index} className='flex flex-col justify-center items-center space-y-2 hover:scale-110 cursor-pointer transition duration-300'>
+                                        {icon}
+                                        <div className='text-[14px]'>{descriptions[1][index]}</div>
+                                    </div>
+                                ))}
+                            </div>
+                        }
+                        {activeIcon === 2 &&
+                            <div className='flex justify-around items-center h-[90%]'>
+                                {iconSets[2].map((icon, index) => (
+                                    <div key={index} className='flex flex-col justify-center items-center space-y-2 hover:scale-110 cursor-pointer transition duration-300'>
+                                        {icon}
+                                        <div className='text-[14px]'>{descriptions[2][index]}</div>
+                                    </div>
+                                ))}
+                            </div>
+                        }
                     </div>
                 </div>
             </div>

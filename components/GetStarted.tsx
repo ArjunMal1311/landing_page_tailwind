@@ -3,7 +3,7 @@ import { FaArrowRight } from 'react-icons/fa'
 
 const GetStarted = () => {
     return (
-        <div className="h-[400px] mt-16 flex justify-center items-center flex-col py-16 p-4">
+        <div className="h-[400px] mt-16 flex justify-center items-center flex-col p-4">
             <div className='text-[14px] font-semibold text-center text-white'>The security first platform</div>
             <div className='text-[44px] font-bold text-center text-white'>Take control of your business</div>
             <div className='text-[18px] text-[#94a3b8] text-center flex justify-center items-center'>

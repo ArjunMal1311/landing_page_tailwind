@@ -1,17 +1,26 @@
 import React from 'react'
 import { Dancing_Script } from 'next/font/google'
 import { FaArrowRight, FaMagic } from "react-icons/fa"
+import { Abel } from 'next/font/google'
+import { JetBrains_Mono } from 'next/font/google';
 
 const dancingScript = Dancing_Script({ weight: "400", subsets: [] })
+const AbelScript = Abel({ weight: "400", subsets: ["latin"] })
+const JetBrains = JetBrains_Mono({ subsets: ['latin'] });
 
 
 const IntroductionPage = () => {
     return (
-        <div className='flex justify-center items-center'>
+        <div className='flex justify-center items-center relative z-50'>
+            <div className='bg-radial-gradient absolute w-full h-full  rounded-full -z-30 flex items-center justify-center'>
+                <div className='relative z-0 bending-line rotate-12 w-[400px] sm:w-[600px] md:w-[600px]'>
+                    <FaArrowRight size={40} className="absolute text-white top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-arrow-move" />
+                </div>
+            </div>
             <div className='2xl:w-[1380px] w-full text-center h-[610px] rounded-br-[100px]'>
                 <div className='text-white flex justify-between px-3 pt-3 h-[10%] select-none'>
                     <div >
-                        <div className={`text-3xl font-bold ${dancingScript}`}>TIH</div>
+                        <div className={`text-3xl font-bold ${dancingScript.className}`}>TIH</div>
                     </div>
 
                     <div className='flex space-x-4 text-[14px] text-[#CBD5E1] items-center'>
@@ -25,8 +34,8 @@ const IntroductionPage = () => {
 
                 <div className='h-full flex justify-center items-center text-[#CBD5E1]'>
                     <div className='w-2/3 flex flex-col items-center'>
-                        <div className='text-[56px] font-bold leading-tight mb-4'>Tech Innovators Hub!</div>
-                        <div className='text-[18px] text-center'>Discover the latest in technology and innovation with Tech Innovators Hub. We are your go-to source for cutting-edge information, products, and services that redefine the digital landscape.</div>
+                        <div className={`text-[56px] font-bold leading-tight mb-4 ${JetBrains.className}`}>Tech Innovators Hub!</div>
+                        <div className={`text-[18px] text-center`}>Discover the latest in technology and innovation with Tech Innovators Hub. We are your go-to source for cutting-edge information, products, and services that redefine the digital landscape.</div>
 
                         <div className='flex mt-6 space-x-5'>
                             <div className='group text-[#0f172a] bg-[#cfcece] px-3 py-1.5 rounded-xl text-[14px] font-semibold flex items-center space-x-1 hover:bg-white cursor-pointer transition duration-300 select-none'>

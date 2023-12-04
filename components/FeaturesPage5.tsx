@@ -66,7 +66,7 @@ const FeaturesPage5 = () => {
     ];
 
     return (
-        <div className='flex justify-center items-center text-white flex-col py-28'>
+        <div className='flex justify-center items-center text-white flex-col py-16'>
             <div className='2xl:w-[1380px] w-full px-8'>
                 <div className='text-[44px] font-extrabold mb-3'>Why trust us?</div>
                 <div className='text-[18px] text-[#94a3b8]'>
