@@ -1,11 +1,9 @@
 import React from 'react'
 import { Dancing_Script } from 'next/font/google'
 import { FaArrowRight, FaMagic } from "react-icons/fa"
-import { Abel } from 'next/font/google'
 import { JetBrains_Mono } from 'next/font/google';
 
 const dancingScript = Dancing_Script({ weight: "400", subsets: [] })
-const AbelScript = Abel({ weight: "400", subsets: ["latin"] })
 const JetBrains = JetBrains_Mono({ subsets: ['latin'] });
 
 
@@ -13,13 +11,13 @@ const IntroductionPage = () => {
     return (
         <div className='flex justify-center items-center relative z-50'>
             <div className='bg-radial-gradient absolute w-full h-full  rounded-full -z-30 flex items-center justify-center'>
-                <div className='relative z-0 bending-line rotate-12 w-[80%] sm:w-[600px] md:w-[600px]'>
+                <div className='relative z-0 bending-line rotate-12 w-[80%] md:w-[800px] '>
                     <FaArrowRight size={40} className="absolute text-white top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-arrow-move" />
                 </div>
             </div>
             <div className='2xl:w-[1380px] w-full text-center h-[610px] rounded-br-[100px]'>
                 <div className='text-white flex justify-between px-3 pt-3 h-[10%] select-none'>
-                    <div >
+                    <div>
                         <div className={`text-3xl font-bold ${dancingScript.className}`}>TIH</div>
                     </div>
 

@@ -14,10 +14,7 @@ const GetStarted = () => {
 
             <div className='flex space-x-2 sm:w-[350px] w-[250px] justify-around mt-10'>
                 <div className='group text-[#0f172a] bg-[#cfcece] px-3 py-1.5 rounded-xl text-[14px] font-semibold flex items-center space-x-1 hover:bg-white cursor-pointer transition duration-300 select-none'>
-                    <div>
-                        Get Started
-                    </div>
-
+                    <div>Get Started</div>
                     <div className='transform group-hover:translate-x-1 transition duration-300'><FaArrowRight /></div>
                 </div>
             </div>

@@ -1,7 +1,6 @@
 import Breaker from '@/components/Breaker'
 import FeaturesPage from '@/components/FeaturesPage'
 import FeaturesPage2 from '@/components/FeaturesPage2'
-import FeaturesPage3 from '@/components/FeaturesPage3'
 import FeaturesPage4 from '@/components/FeaturesPage4'
 import FeaturesPage5 from '@/components/FeaturesPage5'
 import Footer from '@/components/Footer'
@@ -16,7 +15,6 @@ export default function Home() {
       <Scroll />
       <FeaturesPage />
       <FeaturesPage2 />
-      <FeaturesPage3 />
       <Breaker />
       <FeaturesPage4 />
       <FeaturesPage5 />
