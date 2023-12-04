@@ -4,7 +4,7 @@ import { FaArrowRight } from 'react-icons/fa'
 
 const FeaturesPage2 = () => {
     return (
-        <div className='py-8 flex justify-center items-center text-white flex-col'>
+        <div className='flex justify-center items-center text-white flex-col'>
             <div className='2xl:w-[1380px] sm:h-[150px] w-full h-fit'>
                 <div className='text-[44px] font-bold text-center p-2'>Efficient. Intelligent.</div>
                 <div className='text-[18px] text-[#94a3b8] text-center flex justify-center items-center'>
