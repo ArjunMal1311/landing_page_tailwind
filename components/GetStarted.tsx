@@ -3,7 +3,7 @@ import { FaArrowRight } from 'react-icons/fa'
 
 const GetStarted = () => {
     return (
-        <div className="sm:h-[400px] mt-16 flex justify-center items-center flex-col p-4 bg-gradient-to-r from-[#182543] to-[#1a243a] h-fit py-8">
+        <div className="sm:h-[400px] flex justify-center items-center flex-col p-4 bg-gradient-to-r from-[#182543] to-[#1a243a] h-fit py-8">
             <div className='text-[14px] font-semibold text-center text-white'>The security first platform</div>
             <div className='text-[44px] font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-[#3DBFF5] to-[#6F42C1]'>Take control of your business</div>
             <div className='text-[18px] text-[#94a3b8] text-center flex justify-center items-center'>

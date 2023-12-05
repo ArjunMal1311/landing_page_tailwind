@@ -6,13 +6,11 @@ import FeaturesPage5 from '@/components/FeaturesPage5'
 import Footer from '@/components/Footer'
 import GetStarted from '@/components/GetStarted'
 import IntroductionPage from '@/components/IntroductionPage'
-import Scroll from '@/components/Scroll'
 
 export default function Home() {
   return (
     <main className='bg-[#0f172a] h-fit'>
       <IntroductionPage />
-      <Scroll />
       <FeaturesPage />
       <FeaturesPage2 />
       <Breaker />

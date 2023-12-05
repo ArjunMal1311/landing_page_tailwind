@@ -8,7 +8,7 @@ const FeatureSection = ({ title, items, icon }: any) => (
             {title}
         </span>
         <div className='pt-4 flex sm:flex-row flex-col'>
-            {items.map((item : any, index : any) => (
+            {items.map((item: any, index: any) => (
                 <div key={index} className='sm:w-1/3 my-4 w-full'>
                     <div className='flex space-x-2 items-center'>
                         <div>{icon}</div>
@@ -23,7 +23,7 @@ const FeatureSection = ({ title, items, icon }: any) => (
 
 const FeaturesPage5 = () => {
     return (
-        <div className='flex justify-center items-center text-white flex-col py-16'>
+        <div className='flex justify-center items-center text-white flex-col py-16 bg-[url("/bg-features-2.png")] bg-no-repeat'>
             <div className='2xl:w-[1380px] w-full px-8'>
                 <div className='text-[44px] font-extrabold mb-3'>Why trust us?</div>
                 <div className='text-[18px] text-[#94a3b8]'>

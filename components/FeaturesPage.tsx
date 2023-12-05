@@ -6,7 +6,7 @@ const FeaturesPage = () => {
     const [activeIcon, setActiveIcon] = useState<number>(0);
 
     return (
-        <div className="py-8 flex justify-center items-center text-white">
+        <div className="py-8 flex justify-center items-center text-white bg-[url('/bg-features.png')] bg-no-repeat bg-bottom">
             <div className="2xl:w-[1080px] md:h-[600px] h-fit w-full flex items-center justify-between px-8 md:flex-row flex-col">
                 <div className="flex flex-col md:w-1/2 w-full">
                     <div className="text-[14px] font-semibold className='inline-block bg-clip-text text-transparent bg-gradient-to-r from-[#a855f7] to-[#eccade]">The security first platform</div>
