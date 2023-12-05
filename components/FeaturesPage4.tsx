@@ -32,8 +32,8 @@ const FeaturesPage4 = () => {
             <div className='2xl:w-[1380px] sm:h-[150px] w-full px-4 h-fit'>
                 <div className='text-[14px] font-semibold text-center'>The security first platform</div>
                 <div className='text-[44px] font-bold text-center'>Spot issues faster</div>
-                <div className='text-[18px] text-[#94a3b8] text-center flex justify-center items-center'>
-                    <div className='w-2/3'>
+                <div className='text-[18px] text-[#94a3b8] sm:text-center flex justify-center items-center'>
+                    <div className='sm:w-2/3 w-full p-4'>
                         All the lorem ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
                     </div>
                 </div>

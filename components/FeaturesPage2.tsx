@@ -7,8 +7,8 @@ const FeaturesPage2 = () => {
         <div className='flex justify-center items-center text-white flex-col py-8'>
             <div className='2xl:w-[1380px] sm:h-[150px] w-full h-fit md:mb-0 mb-16'>
                 <div className='text-[44px] font-bold text-center p-2 '>Efficient. Intelligent.</div>
-                <div className='text-[18px] text-[#94a3b8] text-center flex justify-center items-center'>
-                    <div className='w-2/3'>
+                <div className='text-[18px] text-[#94a3b8] sm:text-center flex justify-center items-center'>
+                    <div className='sm:w-2/3 w-full px-4'>
                         There are numerous possibilities accessible, but most have experienced modification in some manner, through injected wit or randomized words that may not appear even remotely plausible.
                     </div>
                 </div>

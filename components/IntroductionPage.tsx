@@ -10,8 +10,8 @@ const JetBrains = JetBrains_Mono({ subsets: ['latin'] });
 const IntroductionPage = () => {
     return (
         <div className='flex justify-center items-center relative z-50 py-6 flex-col'>
-            <div className='bg-radial-gradient absolute w-full h-full  rounded-full -z-30 flex items-center justify-center'>
-                <div className='relative z-0 bending-line rotate-12 w-[90%] md:w-[1000px] '>
+            <div className='bg-radial-gradient absolute w-full h-full rounded-full -z-30 flex items-center justify-center'>
+                <div className='relative z-0 bending-line rotate-12 w-[1200px] '>
                     <FaArrowRight size={40} className="absolute text-white top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-arrow-move" />
                 </div>
             </div>
@@ -34,7 +34,7 @@ const IntroductionPage = () => {
                     <div className='h-full flex justify-center items-center text-[#CBD5E1]'>
                         <div className='w-full flex flex-col items-center px-4'>
                             <div className={`text-[56px] sm:text-7xl w-full font-bold leading-tight mb-4 ${JetBrains.className}`}>Tech Innovators Hub!</div>
-                            <div className={`text-[18px] w-2/3 text-center`}>Discover the latest in technology and innovation with Tech Innovators Hub. We are your go-to source for cutting-edge information, products, and services that redefine the digital landscape.</div>
+                            <div className={`text-[18px] sm:w-2/3 w-full text-center`}>Discover the latest in technology and innovation with Tech Innovators Hub. We are your go-to source for cutting-edge information, products, and services that redefine the digital landscape.</div>
 
                             <div className='flex mt-6 space-x-5'>
                                 <div className='group text-[#0f172a] bg-[#cfcece] px-3 py-1.5 rounded-xl text-[14px] font-semibold flex items-center space-x-1 hover:bg-white cursor-pointer transition duration-300 select-none'>
@@ -50,7 +50,7 @@ const IntroductionPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex justify-center items-center text-white overflow-x-hidden'>
+                <div className='flex justify-center items-center text-white overflow-x-hidden py-8'>
                     <div className='2xl:w-[1380px] w-full h-[150px] flex justify-center items-center'>
                         <div className="logos flex overflow-hidden whitespace-nowrap relative">
                             <div className="logos-slide flex space-x-14">
