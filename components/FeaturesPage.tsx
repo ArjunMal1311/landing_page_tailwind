@@ -9,7 +9,7 @@ const FeaturesPage = () => {
         <div className="py-8 flex justify-center items-center text-white bg-[url('/bg-features.png')] bg-no-repeat bg-bottom">
             <div className="2xl:w-[1080px] md:h-[600px] h-fit w-full flex items-center justify-between px-8 md:flex-row flex-col">
                 <div className="flex flex-col md:w-1/2 w-full">
-                    <div className="text-[14px] font-semibold className='inline-block bg-clip-text text-transparent bg-gradient-to-r from-[#a855f7] to-[#eccade]">The security first platform</div>
+                    <div className="text-[14px] font-semibold inline-block bg-clip-text text-transparent bg-gradient-to-r from-[#a855f7] to-[#eccade]">The security first platform</div>
                     <div className="text-[36px] font-bold">
                         Simplify your security with authentication services
                     </div>

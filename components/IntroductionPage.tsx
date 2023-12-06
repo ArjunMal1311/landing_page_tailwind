@@ -9,13 +9,13 @@ const JetBrains = JetBrains_Mono({ subsets: ['latin'] });
 
 const IntroductionPage = () => {
     return (
-        <div className='flex justify-center items-center relative z-50 py-6 flex-col'>
+        <div className='flex justify-center items-center relative z-50 py-6 flex-col bg-[url("/bg-home.png")] bg-cover bg-no-repeat bg-right'>
             <div className='bg-radial-gradient absolute w-full h-full rounded-full -z-30 flex items-center justify-center'>
                 <div className='relative z-0 bending-line rotate-12 w-[1200px] '>
                     <FaArrowRight size={40} className="absolute text-white top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-arrow-move" />
                 </div>
             </div>
-            <div className='2xl:w-[1380px] w-full text-center h-fit rounded-br-[100px]'>
+            <div className='2xl:w-[1380px] w-full text-center h-fit'>
                 <div className='h-[610px]'>
                     <div className='text-white flex justify-between px-3 pt-3 h-[10%] select-none'>
                         <div>
